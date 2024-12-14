@@ -448,7 +448,10 @@ admin.html
 
 ```
 ## OUTPUT:
-![alt text](7chefs.png)
-![alt text](7menu.png)
+![7menu](https://github.com/user-attachments/assets/2c11ec64-5d62-4094-a773-6edbd5fc23f4)
+
+![7chefs](https://github.com/user-attachments/assets/e3ddbb00-ef27-4338-be58-8c21f169a093)
+
+
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
