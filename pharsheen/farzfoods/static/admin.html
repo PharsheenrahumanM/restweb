@@ -1,0 +1,143 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color:yellow;
+        }
+
+        header {
+            text-align: center;
+            background-color: #0e6ff5;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-family: "Caveat", cursive;
+            font-size: 50px;
+            color: white;
+            margin: 0;
+        }
+
+
+        .chefs-container {
+            display: flex;
+            gap: 20px;
+            padding: 40px;
+            margin: auto;
+        }
+
+        .chef-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .chef-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .chef-card img {
+            width: 100%;
+            object-fit: contain; 
+            max-height: 300px; 
+        }
+
+        .chef-details {
+            padding: 20px;
+        }
+
+        .chef-details h1 {
+            font-size: 20px;
+            color: rgb(181, 101, 29);
+            margin: 10px 0;
+        }
+
+        .chef-details h2,
+        .chef-details h3 {
+            font-size: 16px;
+            color: rgb(85, 85, 85);
+            margin: 5px 0;
+        }
+
+       
+        footer {
+            text-align: center;
+            background-color:aliceblue;
+            color:brown;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <header>
+        <h1>Cooking chef</h1>
+    </header>
+
+    
+    <div class="chefs-container">
+        <div class="chef-card">
+            <img src="me.jpg" alt="PharsheenRahuman">
+            <div class="chef-details">
+                <h1>PharsheenRahuman</h1>
+                <h2>CEO</h2>
+                
+            </div>
+        </div>
+        
+        <div class="chef-card">
+            <img src="manish.jpeg" alt="Manish Mehrotra">
+            <div class="chef-details">
+                <h1>Manish Mehrotra</h1>
+                <h2>Designation: Executive Chef</h2>
+                <h3>Experience: 7 years</h3>
+            </div>
+        </div>
+        <div class="chef-card">
+            <img src="sanjeev.jpeg" alt="Sanjeev Kapoor">
+            <div class="chef-details">
+                <h1>Sanjeev Kapoor</h1>
+                <h2>Designation: celebrity Chef</h2>
+                <h3>Experience: 2 years</h3>
+            </div>
+        </div>
+        <div class="chef-card">
+            <img src="vikaskhanna.jpeg" alt="Vikas Khanna">
+            <div class="chef-details">
+                <h1>Vikas Khanna</h1>
+                <h2>Designation: Michelin Star Chef, Restaurateur, Author</h2>
+                <h3>Experience: 5 years</h3>
+            </div>
+        </div>
+        <div class="chef-card">
+            <img src="ranveerbrar.jpeg" alt="Ranveerbrar">
+            <div class="chef-details">
+                <h1>Miss Cheruba</h1>
+                <h2>Designation:Celebrity Chef, Restaurateur, Television Host</h2>
+                <h3>Experience: 3 years</h3>
+            </div>
+        </div>
+        
+       
+    <footer>
+        <p>&copy; 2024 Foodie's Paradise. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
