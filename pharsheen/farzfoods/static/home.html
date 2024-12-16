@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="resthome.jpg" rel="stylesheet">
+    <title>FaRz RESTAURANT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Merienda', cursive;
+            background: url('resthome.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(234, 245, 16);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid goldenrod;
+        }
+
+        header h1 {
+            font-size: 80px;
+            letter-spacing: 10px;
+            margin: 0;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color:azure;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        
+
+        main {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1); 
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        main p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            color:yellow;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8); 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid greenyellow;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: goldenrod;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: #d4af37;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FaRz RESTAURANT!!!!!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="menu.html" title="menu">menu</a></li>
+            <li><a href="admin.html" title="adminis">Administration</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to FaRz Restaurant </p>
+        <p>Family Restaurant</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 FaRz Restaurant | Designed by: <b>PharsheenRahuman M</b></p>
+        <p>
+            <a href="#" title="Facebook">Facebook</a> |
+             |
+            <a href="#" title="Instagram">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
