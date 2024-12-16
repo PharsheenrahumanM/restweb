@@ -1,5 +1,5 @@
 # Ex.07 Restaurant Website
-## Date:14/12/2024
+## Date:16/12/2024
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -29,6 +29,152 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
+
+home.html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="resthome.jpg" rel="stylesheet">
+    <title>FaRz RESTAURANT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Merienda', cursive;
+            background: url('resthome.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(234, 245, 16);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid goldenrod;
+        }
+
+        header h1 {
+            font-size: 80px;
+            letter-spacing: 10px;
+            margin: 0;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color:azure;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        
+
+        main {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1); 
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        main p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            color:yellow;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8); 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid greenyellow;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: goldenrod;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: #d4af37;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FaRz RESTAURANT!!!!!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="menu.html" title="menu">menu</a></li>
+            <li><a href="admin.html" title="adminis">Administration</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to FaRz Restaurant </p>
+        <p>Family Restaurant</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 FaRz Restaurant | Designed by: <b>PharsheenRahuman M</b></p>
+        <p>
+            <a href="#" title="Facebook">Facebook</a> |
+             |
+            <a href="#" title="Instagram">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
 food.html
 
 <!DOCTYPE html>
@@ -444,14 +590,125 @@ admin.html
 
 </body>
 </html>
+contact.html
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <title>Contact Us</title>
+        <style>
+            #n1{
+                position: relative;
+                color:navy;
+                font-size: 60px;
+                padding-left: 380px;
+                left: 0px;
+                top: 190px;
+                letter-spacing: 5px;
+            }
+            body{
+                background-image: url("resthome.jpg");
+                background-repeat: no-repeat;
+                background-size: 1700px 950px;
+            }
+            #n2{
+                position:relative;
+                color: gray;
+                font-size: 80px;
+                padding-left: 480px;
+                top: 140px;
+                letter-spacing: 3px;
+                font-family: "Dancing Script", cursive;
+            }
+            #n3{
+                position: relative;
+                color: gray;
+                font-size: 35px;
+                top: 255px;
+                padding-left: 240px;
+            }
+            #n4{
+                position: relative;
+                color:darkmagenta;
+                font-size:31px;
+                top: 205px;
+                padding-left: 170px;
+                letter-spacing: 2px;
+            }
+            #n5{
+                position: relative;
+                color: aliceblue;
+                font-size: 35px;
+                top: 60px;
+                padding-left: 680px;
+            }
+            #n6{
+                position: relative;
+                color:crimson;
+                font-size:35px;
+                top: 8px;
+                padding-left: 505px;
+            }
+            #n7{
+                position: relative;
+                color: aliceblue;
+                font-size: 35px;
+                bottom: 135px;
+                padding-left: 1155px;
+            }
+            #n8{
+                position: relative;
+                color:darksalmon;
+                font-size: 31px;
+                bottom: 187px;
+                padding-left: 950px;
+                text-align: center;
+            }
+
+           
+            a {
+                color:red;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+      
+            a:hover {
+                text-decoration: underline;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 id="n1">Welcome</h1>
+        <h2 id="n2">Quality and Taste</h2>
+        <h5 id="n3">Phone:</h5>
+        <h5 id="n4">
+            <a href="tel:+919669966969">+91 6546456456</a>
+        </h5>
+        <h5 id="n5">Email:</h5>
+        <h5 id="n6">
+            <a href="mailto:farz101@gmail.com"><b>farz101@gmail.com</b></a>
+        </h5>
+        <h5 id="n7">Location:</h5>
+        <h5 id="n8">
+            <a href="FaRz restarurant"><b> FaRz restaurant in chennai-600 035</b></a>
+        </h5>
+    </body>
+</html>
+
 
 
 ```
 ## OUTPUT:
+![homerest](https://github.com/user-attachments/assets/e25fe394-32d9-4465-8441-2a17b181b8b5)
+
 ![7menu](https://github.com/user-attachments/assets/2c11ec64-5d62-4094-a773-6edbd5fc23f4)
 
 ![7chefs](https://github.com/user-attachments/assets/e3ddbb00-ef27-4338-be58-8c21f169a093)
 
+![contrest](https://github.com/user-attachments/assets/f1ab54a9-7aa9-4492-a073-122dce7f4584)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
